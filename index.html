@@ -1,0 +1,44 @@
+<style>
+
+  body {
+    background-color: #fff09b;
+  }
+
+  .sphere {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: calc(50vw - 100px);
+    border-radius: 50%;
+    background-image: radial-gradient(
+      circle at 10px 10px,
+      #eabdb7,
+      #f1c0bb,
+      #efbebd,
+      #e4a79f,
+      #d2928a,
+      #e0a098);
+  }
+
+  .sphere::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    border-radius: 50%;
+    background-image: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.8) 14%,
+      rgba(255, 255, 255, 0) 24%);
+  }
+
+  .sphere::after {
+    content: "";
+  }
+
+</style>
+
+<div class="sphere"></div>
